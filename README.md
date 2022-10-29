@@ -14,3 +14,26 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
 
 You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+
+
+## 项目结构说明
+
+assets文件夹用来放置图标文件
+
+components用来放置自定义组件和包装组件。
+
+layouts文件用来放整个页面文件。
+
+models用来定义你的模型。比如接收的模型，发送的模型，这是ts文件，用来规范代码。目前只定义了一个user类用来示范（类比Java）
+
+router用定义路由，主要是掌管layouts里的整个路由。（写了示例）
+
+store文件夹来定义全局变量。比如用户登陆时候用的token
+
+utils里放工具类。目前放置了anxios的请求工具类，以及请求拦截的定义。
+
+## package.json的说明
+
+![image-20221029221941409](C:\Users\ht\AppData\Roaming\Typora\typora-user-images\image-20221029221941409.png)
+
+第一个用来预览，第二个用来打包。
